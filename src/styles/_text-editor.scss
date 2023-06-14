@@ -1,0 +1,21 @@
+﻿.ql-container {
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.ql-editor.ql-blank::before {
+  color: var(--text-placeholder);
+  font-style: normal;
+  font-size: inherit;
+}
+
+.ql-bubble .ql-tooltip {
+  border-radius: 5px;
+  background: var(--text-primary-color);
+}
+.ql-bubble .ql-tooltip:not(.ql-flip) .ql-tooltip-arrow {
+  border-bottom-color: var(--text-primary-color);
+}
+.ql-bubble .ql-toolbar .ql-formats {
+  margin: 4px 12px 4px 0;
+}

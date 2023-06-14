@@ -1,0 +1,55 @@
+.form-control,
+.form-select {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    border-color: var(--form-border-color);
+    padding-left: 0;
+    padding-right: 0;
+    font-size: inherit;
+    background: transparent;
+
+    &::placeholder {
+        color: var(--form-placeholder-color);
+        font-family: 'Inter', sans-serif;
+        font-size: inherit;
+    }
+
+    &:focus, &:active {
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+div.form-control {
+    border: 0;
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+    box-shadow: none
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-select {
+    font-size: inherit;
+}
+
+.form-floating > label {
+    padding: 28px 0 0 0;
+    color: var(--text-placeholder);
+}
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
+    color: var(--text-link);
+    transform: scale(0.85) translateY(-22px) translateX(0);
+}
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+    padding: 1rem 1px;
+}

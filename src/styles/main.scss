@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import "~bootstrap/scss/bootstrap";
+@import "./vars";
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    & > body {
+        height: 100%;
+        width: 100%;
+        background-color: var(--body-bg-color);
+        color: var(--text-primary-color);
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+
+        #root {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: inherit;
+            font-weight: 600;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    cursor: pointer;
+    transition: all var(--trs);
+
+    &:hover {
+        color: var(--link-color--hover);
+        text-decoration: underline;
+    }
+}
+
+
+@import "./forms";
+@import "./cards";
+@import "./text-editor";
+@import "./transitions";
+@import "./tables";

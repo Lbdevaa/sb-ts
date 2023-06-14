@@ -1,0 +1,146 @@
+.main {
+    padding: 11px 16px;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid inherit;
+    transition: all var(--trs);
+
+    &Primary {
+        background-color: var(--dy-control-turquoise);
+
+        &:hover {
+            background-color: var(--dy-control-dark-turquoise);
+        }
+    }
+
+    &Danger {
+        color: var(--body-bg-color);
+        background-color: var(--dy-control-error);
+
+        &:hover {
+            background-color: var(--dy-control-red-200);
+        }
+    }
+
+    &Info {
+    }
+
+    &Success {
+    }
+
+    &Secondary {
+        background-color: var(--dy-control-grey-200);
+
+        &:hover {
+            background-color: var(--dy-control-grey-300);
+        }
+    }
+
+    &Warning {
+    }
+
+    &Info {
+    }
+
+    &Light {
+    }
+
+    &Dark {
+    }
+
+    &:disabled {
+        background-color: var(--dy-control-grey-200);
+        color: var(--text-secondary);
+    }
+}
+
+.link {
+    color: var(--text-link);
+    display: flex;
+    column-gap: 6px;
+    padding: 0;
+    align-items: center;
+    border: none;
+    background: none;
+    outline: none;
+    transition: all var(--trs);
+
+    & svg {
+        color: var(--dy-icon-blue);
+        transition: all var(--trs);
+    }
+
+    &:hover {
+        color: var(--text-link--hover);
+    }
+}
+
+.textBtn {
+    @extend .link;
+    color: var(--text-secondary);
+
+    & svg {
+        color: var(--dy-icon-gray);
+    }
+
+    &:hover {
+        & svg {
+            color: var(--dy-icon-blue);
+        }
+
+        color: var(--dy-icon-blue);
+        text-decoration: none;
+    }
+}
+
+.placeholderBtn {
+    @extend .textBtn;
+    color: var(--text-placeholder);
+}
+
+.small {
+    padding: 4px 12px;
+    border: 2px solid var(--dy-control-dark-turquoise);
+    background: var(--body-bg-color);
+    border-radius: 5px;
+    color: var(--text-primary-color);
+    transition: all var(--trs);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background: var(--dy-control-dark-turquoise);
+        color: var(--text-inverse);
+    }
+}
+
+.redSmall {
+    padding: 4px 12px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--dy-icon-red);
+    transition: all var(--trs);
+    //display: flex;
+    align-items: center;
+
+    &:hover {
+        border: 2px solid var(--dy-icon-red);
+    }
+}
+
+.graySmall {
+    padding: 4px 12px;
+    border: 2px solid var(--dy-control-grey-300);
+    background: var(--body-bg-color);
+    border-radius: 5px;
+    color: var(--text-primary-color);
+    transition: all var(--trs);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background: var(--dy-control-grey-300);
+        color: var(--text-primary-color);
+    }
+}

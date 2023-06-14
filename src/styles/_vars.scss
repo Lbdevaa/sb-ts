@@ -1,0 +1,183 @@
+:root {
+    --trs: 0.2s ease-in-out;
+
+    // light-theme colors
+    --dy-control-grey-100: #f2f3f7;
+    --dy-control-grey-200: #e3e5ed;
+    --dy-control-grey-300: #d5d8e2;
+    --dy-control-light-purple-100: #f3f2ff;
+    --dy-control-light-purple-200: #dbd8ff;
+    --dy-control-red-100: #ffd8d8;
+    --dy-control-red-200: #f52941;
+  --dy-control-error: #ff6868;
+  --dy-control-blue: #6b68ff;
+  --dy-control-light-turquoise: #c6faf0;
+  --dy-control-turquoise: #31efcd;
+  --dy-control-dark-turquoise: #00cfaa;
+  --dy-control-border-light-turquoise: #6affe4;
+
+
+  --dy-background-grey-100: #fafcfe;
+  --dy-background-grey-200: #f4f8fc;
+
+  --dy-color-white-70: rgba(255, 255, 255, 0.7);
+
+  // colors
+  --colors-light-red: #ffefef;
+  --colors-deep-yellow: #e4db00;
+  --colors-orange: #EB9000;
+  --color-light-yellow: #F6FACC;
+  --colors-green: #28AE00;
+
+  /*** <layout> ***/
+  // body
+  --body-bg-color: #ffffff;
+    --body-bg-color--second: #fafcfe;
+
+    // text
+    --text-primary-color: #05001a;
+    --text-inverse: var(--body-bg-color);
+    --text-secondary: #717075;
+    --text-completed: #28ae00;
+    --text-in-progres: #eb9000;
+    --text-placeholder: #a7a6ae;
+    --text-error: var(--dy-control-red-200);
+    --text-link: #5149b2;
+    --text-link--hover: #3026a2;
+
+    // icons
+    --dy-icon-white: #ffffff;
+    --dy-icon-blue: #5149b2;
+    --dy-icon-gray: #a0a6ba;
+    --dy-icon-red: #f52941;
+
+    // links
+    --link-color: #5149b2;
+    --link-color--hover: #5149b2;
+
+    // buttons
+    --btn-primary-bg: var(--dy-control-turquoise);
+    --btn-primary-bg--hover: var(--dy-control-dark-turquoise);
+    --btn-secondary-bg: #e8e8e8;
+    --btn-disabled-bg: var(--dy-control-grey-200);
+    --btn-disabled-color: var(--text-secondary);
+
+    // forms
+    --form-border-color: #e7e7e7;
+    --form-border-color--focus: var(--dy-control-blue);
+    --form-placeholder-color: #a7a6ae;
+    --line-box-gray-color: #e5e5e5;
+
+    // card
+    --card-border-color: #f2f3f7;
+    --card-box-shadow: 0 16px 30px rgba(57, 36, 142, 0.05);
+    --card-bg-color: #fff;
+    --card-footer-bg-color: #fff;
+
+    // Popovers
+    --po-panel-border-color: var(--dy-control-grey-300);
+    --po-panel-border: 1px solid var(--po-panel-border-color);
+    --po-panel-shadow: 0 16px 30px rgba(57, 36, 142, 0.05);
+
+    // help-menu
+    --hm-button-border-color: var(--dy-control-border-light-turquoise);
+    --hm-button-bg: var(--dy-control-dark-turquoise);
+    --hm-button-border-color--hover: var(--dy-control-blue);
+    --hm-button-bg--hover: var(--dy-icon-blue);
+    --hm-button-text-color: var(--dy-icon-white);
+    --hm-menu-bg: var(--body-bg-color);
+    --hm-menu-box-shdow: 0px 16px 22px rgba(57, 36, 142, 0.15);
+
+    /*** </layout> ***/
+
+    /*** <modules> ***/
+    // page-header
+    --header-bg: #fff;
+    --header-border-color: var(--dy-control-grey-200);
+    --header-icons-color: var(--dy-icon-gray);
+
+    --header-search-control-bg: var(--dy-control-grey-100);
+    --header-search-control-border: var(--dy-control-grey-100);
+    --header-search-control-border--focus: #6b68ff;
+
+    --create-btn-border-color: #6affe4;
+    --create-btn-border-color--hover: #6b68ff;
+
+    --create-btn-bg: #00cfaa;
+    --create-btn-bg--hover: #5149b2;
+
+    --create-btn-color: #fff;
+    --create-btn-color--hover: #fff;
+
+    // app-menu
+    --menu-item-bg: #fafcfe;
+    --menu-item-bg--hover: #f2f3f7;
+    --menu-item-bg--active: var(--dy-control-light-purple-100);
+    --menu-item-color: #05001a;
+    --menu-item-icons: var(--dy-icon-gray);
+    --menu-item-icons--active: var(--dy-icon-blue);
+
+    --menu-item-badge-color: var(--dy-icon-white);
+    --menu-item-badge-bg: var(--dy-icon-blue);
+
+    // aside
+    --aside-bg: #fafcfe;
+    --aside-border-color: var(--dy-control-grey-200);
+    --aside-menu-icon-color: var(--dy-icon-gray);
+    --aside-menu-icon-color--hover: var(--dy-icon-blue);
+
+    // avatar
+    --avatar-bg: #9e77ce;
+    --avatar-text-color: #ffffff;
+    --avatar-border-color: #ffffff;
+
+    // workflow-editor
+    --we-tools-bg: var(--body-bg-color);
+    --we-tools-border: 1px solid var(--dy-control-grey-200);
+    --we-tools-shadow: 0px 0px 10px rgba(48, 46, 106, 0.05);
+
+    --we-start-event-bg: #dfffd7;
+    --we-start-event-border-color: #25b900;
+
+    --we-end-event-bg: #ffe9e9;
+    --we-end-event-border-color: #ff0000;
+
+    --we-gateway-bg: #ffb800;
+
+    --we-edge-color: var(--text-secondary);
+    --we-edge-color--selected: var(--dy-control-blue);
+
+    // employee-menu
+    --employee-menu-bg: #fff;
+    --employee-menu-item-bg--hover: #f3f2ff;
+    --employee-menu-item-color: #05001a;
+    --employee-menu-item-color--red: #f52941;
+    --employee-menu-items-border-color: #f2f3f7;
+    --employee-menu-items-shadow: 0px 16px 30px rgba(57, 36, 142, 0.05);
+
+    // pagination
+    --pagination-link-color: var(--text-primary-color);
+    --pagination-link-color--active: var(--dy-icon-white);
+    --pagination-page-bg: #fff;
+    --pagination-page-bg--hover: #f3f2ff;
+    --pagination-page-bg--active: var(--dy-control-dark-turquoise);
+
+    // company-plan-editor
+    --cp-editor-tools-shadow: 0px 0px 10px rgba(48, 46, 106, 0.05);
+    --cp-editor-tools-border: 1px solid var(--dy-control-grey-200);
+    --cp-editor-tools-background: var(--body-bg-color);
+    --cp-editor-tools-z-index: 100;
+    --cp-editor-edge-color: var(--text-secondary);
+
+    /*** </modules> ***/
+    //history tasks
+
+    --task-history-old-value: var(--dy-control-grey-200);
+    --task-history-old-value-border: var(--dy-control-grey-300);
+    --task-history-new-value: var(--color-light-yellow);
+    --task-history-new-value-border: var(--colors-deep-yellow);
+}
+
+.theme-dark {
+    // dark-theme colors
+}

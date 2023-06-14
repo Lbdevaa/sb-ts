@@ -1,0 +1,41 @@
+@import "bootstrap";
+
+.body {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.375rem;
+    margin-bottom: 0.25rem;
+
+    &Danger {
+        @extend .alert;
+        @extend .alert-danger;
+    }
+
+    &Info {
+        @extend .alert;
+        @extend .alert-info;
+    }
+
+    &Success {
+        @extend .alert;
+        @extend .alert-success;
+    }
+
+    &Message {
+    }
+
+    &CloseBtn {
+        border: none;
+        background: inherit;
+        outline: none;
+
+        color: var(--dy-icon-gray);
+
+        &:hover {
+            color: var(--text-primary-color);
+        }
+    }
+}

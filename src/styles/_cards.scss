@@ -1,0 +1,13 @@
+.card {
+    border: 1px solid var(--card-border-color);
+    box-shadow: var(--card-box-shadow);
+    background-color: var(--card-bg-color);
+
+    &-body {
+        padding: 24px;
+    }
+
+    &-footer {
+        background-color: var(--card-footer-bg-color);
+    }
+}

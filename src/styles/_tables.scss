@@ -1,0 +1,25 @@
+﻿.table {
+  thead {
+    tr {
+      th {
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: var(--dy-background-grey-100);
+  background-color: var(--dy-background-grey-100);
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: var(--dy-background-grey-200);
+}
+
+.table-hover tr td {
+  transition: all var(--trs);
+}
