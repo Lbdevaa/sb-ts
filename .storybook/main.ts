@@ -39,32 +39,33 @@ const config: StorybookConfig = {
             },
             propFilter: () => true,
         },
-    },
-    webpackFinal: async (config, {configType}) => {
-        // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-        // You can change the configuration based on that.
-        // 'PRODUCTION' is used when building the static version of storybook.
+    }
+    // ,
+    // webpackFinal: async (config, {configType}) => {
+    //     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
+    //     // You can change the configuration based on that.
+    //     // 'PRODUCTION' is used when building the static version of storybook.
 
-        // Make whatever fine-grained changes you need
-        if (config.module && config.module.rules) {
-            config.module.rules = [
-                ...config.module.rules.map(rule => {
-                    if (/svg/.test(rule.test)) {
-                        // Silence the Storybook loaders for SVG files
-                        return {...rule, exclude: /\.svg$/i};
-                    }
-                    return rule;
-                }),
-                // Add your custom SVG loader
-                {
-                    test: /\.svg$/i,
-                    use: ["@svgr/webpack"],
-                },
-            ];
-        }
+    //     // Make whatever fine-grained changes you need
+    //     if (config.module && config.module.rules) {
+    //         config.module.rules = [
+    //             ...config.module.rules.map(rule => {
+    //                 if (/svg/.test(rule.test)) {
+    //                     // Silence the Storybook loaders for SVG files
+    //                     return {...rule, exclude: /\.svg$/i};
+    //                 }
+    //                 return rule;
+    //             }),
+    //             // Add your custom SVG loader
+    //             {
+    //                 test: /\.svg$/i,
+    //                 use: ["@svgr/webpack"],
+    //             },
+    //         ];
+    //     }
 
-        // Return the altered config
-        return config;
-    },
+    //     // Return the altered config
+    //     return config;
+    // },
 };
 export default config;
